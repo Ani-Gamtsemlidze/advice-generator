@@ -100,12 +100,11 @@
 @media only screen and (max-width: 992px) {
   .advice-box {
     max-width: 343px;
-  }
-  .number {
-    font-size: 11px;
-  }
-  .advice-box {
     .text-box {
+      .number {
+        font-size: 11px;
+      }
+
       .quotes-box {
         .quotes {
           font-size: 24px;

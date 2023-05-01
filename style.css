@@ -103,7 +103,7 @@
   .advice-box {
     max-width: 343px;
   }
-  .number {
+  .advice-box .text-box .number {
     font-size: 11px;
   }
   .advice-box .text-box .quotes-box .quotes {
