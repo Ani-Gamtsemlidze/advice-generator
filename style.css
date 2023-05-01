@@ -43,11 +43,20 @@
 .advice-box .text-box {
   text-align: center;
 }
-.advice-box .text-box span {
+.advice-box .text-box .number {
+  max-width: 122px;
+  width: 100%;
+  display: inline-block;
+}
+.advice-box .text-box .number p {
+  width: 100%;
   color: #53ffaa;
   font-size: 13px;
   line-height: 18px;
   letter-spacing: 4px;
+}
+.advice-box .text-box .number span {
+  width: 100%;
 }
 .advice-box .text-box .quotes-box {
   max-width: 444px;
@@ -88,4 +97,16 @@
 }
 .dice-box:hover {
   box-shadow: 0px 0px 40px #53ffaa;
+}
+
+@media only screen and (max-width: 992px) {
+  .advice-box {
+    max-width: 343px;
+  }
+  .number {
+    font-size: 11px;
+  }
+  .advice-box .text-box .quotes-box .quotes {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */

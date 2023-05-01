@@ -1,5 +1,6 @@
 const diceBtn = document.querySelector(".dice");
 let quotes = document.querySelector(".quotes");
+
 let adviceNumber = document.querySelector(".advice-number");
 
 let randomAdvices = [
@@ -12,12 +13,12 @@ let randomAdvices = [
   "Life is really simple, but we insist on making it complicated.",
   "May you live all the days of your life.",
   "Life is ours to be spent, not to be saved.",
-  " Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma — which is living with the results of other people's thinking.",
+  " Your time is limited, so don't waste it living someone else's life.",
 ];
 
 diceBtn.addEventListener("click", function () {
   let index = Math.trunc(Math.random() * randomAdvices.length - 1);
   index++;
   quotes.textContent = randomAdvices[index];
-  adviceNumber.textContent = `ADVICE #${index}`;
+  adviceNumber.textContent = index;
 });
