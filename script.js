@@ -1,4 +1,6 @@
-const diceBtn = document.querySelector(".dice");
+const diceBtn = document.querySelector(".dice-box");
+const dice = document.querySelector(".dice");
+
 let quotes = document.querySelector(".quotes");
 
 let adviceNumber = document.querySelector(".advice-number");
@@ -14,11 +16,17 @@ let randomAdvices = [
   "May you live all the days of your life.",
   "Life is ours to be spent, not to be saved.",
   " Your time is limited, so don't waste it living someone else's life.",
+  "The way to get started is to quit talking and begin doing.",
 ];
 
 diceBtn.addEventListener("click", function () {
   let index = Math.trunc(Math.random() * randomAdvices.length - 1);
-  index++;
   quotes.textContent = randomAdvices[index];
+  index++;
   adviceNumber.textContent = index;
+
+  dice.classList.add("shake-anime");
+  setTimeout(function () {
+    dice.classList.remove("shake-anime");
+  }, 1000);
 });
